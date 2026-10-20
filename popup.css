@@ -1,0 +1,409 @@
+/* ==========================================================================
+   BPS Gellért Sötét Mód - Beállítások Felület (Popup CSS)
+   ========================================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 320px;
+  background-color: #0b1120;
+  color: #f8fafc;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 13px;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+.popup-container {
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* --------------------------------------------------------------------------
+   Fejléc
+   -------------------------------------------------------------------------- */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(99, 102, 241, 0.35);
+}
+
+.title-meta h1 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.title-meta .subtitle {
+  font-size: 11px;
+  color: #94a3b8;
+}
+
+.version-badge {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 6px;
+  background: rgba(99, 102, 241, 0.18);
+  color: #818cf8;
+  border: 1px solid rgba(99, 102, 241, 0.3);
+}
+
+/* --------------------------------------------------------------------------
+   Kártyák & Szekciók
+   -------------------------------------------------------------------------- */
+.card {
+  background: #121c32;
+  border: 1px solid #233149;
+  border-radius: 10px;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: border-color 0.2s ease;
+}
+
+.card:hover {
+  border-color: #2e4162;
+}
+
+/* Fő bekapcsoló kártya & Kapcsoló */
+.main-toggle-card {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  background: linear-gradient(135deg, #131e36, #162443);
+  border-color: #2b3d5e;
+}
+
+.toggle-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.card-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.card-status {
+  font-size: 11px;
+  font-weight: 500;
+  color: #6ee7b7;
+}
+
+.card-status.disabled {
+  color: #94a3b8;
+}
+
+/* iOS stílusú kapcsoló */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 42px;
+  height: 22px;
+  cursor: pointer;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #233149;
+  border-radius: 24px;
+  transition: all 0.25s ease;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 3px;
+  bottom: 3px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.switch input:checked + .slider {
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+}
+
+.switch input:checked + .slider::before {
+  transform: translateX(20px);
+}
+
+/* --------------------------------------------------------------------------
+   Színszűrő (Képernyőkép alapján)
+   -------------------------------------------------------------------------- */
+.filter-section {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.filter-instruction {
+  font-size: 10.5px;
+  color: #94a3b8;
+  text-align: center;
+}
+
+.filter-pills-box {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 6px 8px;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.filter-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.filter-pill {
+  flex: 1;
+  height: 18px;
+  border-radius: 5px;
+  background-color: var(--pill-color);
+  border: 1.5px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+  opacity: 0.85;
+}
+
+.filter-pill:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.filter-pill.active {
+  opacity: 1;
+  border-color: #ffffff;
+  box-shadow: 0 0 0 2px #0b1120, 0 0 0 3px var(--pill-color);
+  transform: scale(1.05);
+}
+
+/* --------------------------------------------------------------------------
+   Témák Rácsa
+   -------------------------------------------------------------------------- */
+.theme-grid-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.theme-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  max-height: 240px;
+  overflow-y: auto;
+  padding: 2px 2px 6px 2px;
+}
+
+.theme-grid::-webkit-scrollbar {
+  width: 5px;
+}
+.theme-grid::-webkit-scrollbar-thumb {
+  background: #2b3b57;
+  border-radius: 9999px;
+}
+
+.theme-card {
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1.5px solid rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.theme-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.theme-card.active {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px #6366f1;
+  background: rgba(99, 102, 241, 0.1);
+}
+
+.theme-card-preview {
+  width: 100%;
+  height: 38px;
+  border-radius: 8px;
+  background: var(--theme-gradient);
+  margin-bottom: 4px;
+  position: relative;
+}
+
+.theme-card.active .theme-card-preview::after {
+  content: "✔";
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 15px;
+  height: 15px;
+  background: #6366f1;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-card-label {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 6px;
+  padding: 3px 4px;
+  font-size: 10px;
+  font-weight: 600;
+  color: #f1f5f9;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* --------------------------------------------------------------------------
+   Opciók
+   -------------------------------------------------------------------------- */
+.options-card {
+  padding: 8px 10px;
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.checkbox-row input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 4px;
+  background: #0b1120;
+  border: 1px solid #334155;
+  cursor: pointer;
+  display: grid;
+  place-content: center;
+}
+
+.checkbox-row input[type="checkbox"]::before {
+  content: "✔";
+  font-size: 9px;
+  color: #ffffff;
+  transform: scale(0);
+  transition: 0.15s transform ease-in-out;
+}
+
+.checkbox-row input[type="checkbox"]:checked {
+  background: #6366f1;
+  border-color: #6366f1;
+}
+
+.checkbox-row input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+.checkbox-text {
+  font-size: 11.5px;
+  color: #cbd5e1;
+}
+
+/* --------------------------------------------------------------------------
+   Lábléc & Információ
+   -------------------------------------------------------------------------- */
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-top: 4px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 10.5px;
+  color: #94a3b8;
+}
+
+.shortcut-badge {
+  background: #18243c;
+  border: 1px solid #293a58;
+  border-radius: 4px;
+  padding: 2px 5px;
+  font-family: inherit;
+  font-size: 9.5px;
+  font-weight: 600;
+  color: #cbd5e1;
+}
+
+.site-tag {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10.5px;
+  color: #64748b;
+  margin-top: 2px;
+}
+
+.site-tag .dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #10b981;
+  box-shadow: 0 0 6px rgba(16, 185, 129, 0.6);
+}

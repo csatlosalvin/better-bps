@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "BPS Gellért Sötét Mód & Témagaléria",
+  "version": "1.2.5",
+  "description": "Elegáns sötét mód és testreszabható téma a Budapest School Gellért (Base44) felületéhez.",
+  "author": "Csatlós Alvin",
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_title": "BPS Gellért Sötét Téma",
+    "default_popup": "popup.html",
+    "default_icon": "icons/icon.svg"
+  },
+  "icons": {
+    "48": "icons/icon.svg",
+    "96": "icons/icon.svg",
+    "128": "icons/icon.svg"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://bps-gell-rt.base44.app/*"
+      ],
+      "css": ["theme.css"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "bps-gellert-theme@alvin.local",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  }
+}

@@ -1,0 +1,2471 @@
+/* ==========================================================================
+   BPS Gellért Egyedi Témarendszer & Témagaléria (20 Téma Sötét ÉS Világos Módban)
+   Tervezve a Budapest School Gellért Base44 felületéhez
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. SÖTÉT MÓD (DARK MODE) - 20 Színes Téma
+   -------------------------------------------------------------------------- */
+/* Alapértelmezett / Slate Indigo */
+html.bps-theme-active.bps-dark-mode,
+html.bps-dark-mode.dark,
+:root.bps-dark-mode,
+html.bps-theme-active.bps-dark-mode[data-bps-theme="slate-indigo"] {
+  --background: 222 47% 9% !important;
+  --foreground: 210 40% 98% !important;
+  --card: 222 44% 13% !important;
+  --card-foreground: 210 40% 98% !important;
+  --popover: 222 44% 15% !important;
+  --popover-foreground: 210 40% 98% !important;
+  --primary: 239 84% 67% !important;
+  --primary-foreground: 210 40% 98% !important;
+  --secondary: 217 33% 18% !important;
+  --secondary-foreground: 210 40% 92% !important;
+  --muted: 217 33% 17% !important;
+  --muted-foreground: 215 20% 65% !important;
+  --accent: 239 84% 67% !important;
+  --border: 217 33% 22% !important;
+  --input: 217 33% 22% !important;
+  --ring: 239 84% 67% !important;
+  --sidebar-background: 224 71% 7% !important;
+  --sidebar-foreground: 210 40% 90% !important;
+  --sidebar-primary: 239 84% 67% !important;
+  --sidebar-accent: 217 33% 15% !important;
+  --sidebar-border: 217 33% 17% !important;
+  color-scheme: dark !important;
+}
+
+/* 2. Digital Horizon (Dark) */
+html.bps-theme-active.bps-dark-mode[data-bps-theme="digital-horizon"] {
+  --background: 230 45% 8% !important;
+  --foreground: 210 40% 98% !important;
+  --card: 232 40% 13% !important;
+  --card-foreground: 210 40% 98% !important;
+  --popover: 232 40% 15% !important;
+  --popover-foreground: 210 40% 98% !important;
+  --primary: 199 89% 55% !important;
+  --primary-foreground: 210 40% 98% !important;
+  --secondary: 230 30% 19% !important;
+  --secondary-foreground: 210 40% 92% !important;
+  --muted: 230 30% 18% !important;
+  --muted-foreground: 220 20% 65% !important;
+  --accent: 330 85% 65% !important;
+  --border: 230 30% 24% !important;
+  --input: 230 30% 24% !important;
+  --ring: 199 89% 55% !important;
+  --sidebar-background: 234 50% 7% !important;
+  --sidebar-foreground: 210 40% 90% !important;
+  --sidebar-primary: 199 89% 55% !important;
+  --sidebar-accent: 230 30% 17% !important;
+  --sidebar-border: 230 30% 19% !important;
+}
+
+/* 3. Blossom (Dark) */
+html.bps-theme-active.bps-dark-mode[data-bps-theme="blossom"] {
+  --background: 215 35% 10% !important;
+  --foreground: 210 40% 98% !important;
+  --card: 217 30% 15% !important;
+  --card-foreground: 210 40% 98% !important;
+  --popover: 217 30% 17% !important;
+  --popover-foreground: 210 40% 98% !important;
+  --primary: 190 90% 50% !important;
+  --primary-foreground: 210 40% 98% !important;
+  --secondary: 215 25% 20% !important;
+  --secondary-foreground: 210 40% 92% !important;
+  --muted: 215 25% 19% !important;
+  --muted-foreground: 215 20% 65% !important;
+  --accent: 190 90% 50% !important;
+  --border: 215 25% 25% !important;
+  --input: 215 25% 25% !important;
+  --ring: 190 90% 50% !important;
+  --sidebar-background: 220 40% 7% !important;
+  --sidebar-foreground: 210 40% 90% !important;
+  --sidebar-primary: 190 90% 50% !important;
+  --sidebar-accent: 215 25% 17% !important;
+  --sidebar-border: 215 25% 20% !important;
+}
+
+/* 4. Bubblegum (Dark) */
+html.bps-theme-active.bps-dark-mode[data-bps-theme="bubblegum"] {
+  --background: 260 40% 9% !important;
+  --foreground: 210 40% 98% !important;
+  --card: 260 35% 14% !important;
+  --card-foreground: 210 40% 98% !important;
+  --popover: 260 35% 16% !important;
+  --popover-foreground: 210 40% 98% !important;
+  --primary: 292 84% 61% !important;
+  --primary-foreground: 210 40% 98% !important;
+  --secondary: 260 30% 20% !important;
+  --secondary-foreground: 210 40% 92% !important;
+  --muted: 260 30% 19% !important;
+  --muted-foreground: 260 20% 68% !important;
+  --accent: 292 84% 61% !important;
+  --border: 260 30% 25% !important;
+  --input: 260 30% 25% !important;
+  --ring: 292 84% 61% !important;
+  --sidebar-background: 262 50% 6% !important;
+  --sidebar-foreground: 210 40% 90% !important;
+  --sidebar-primary: 292 84% 61% !important;
+  --sidebar-accent: 260 30% 17% !important;
+  --sidebar-border: 260 30% 20% !important;
+}
+
+/* 5. Cherry (Dark) */
+html.bps-theme-active.bps-dark-mode[data-bps-theme="cherry"] {
+  --background: 345 50% 8% !important;
+  --foreground: 210 40% 98% !important;
+  --card: 345 45% 13% !important;
+  --card-foreground: 210 40% 98% !important;
+  --popover: 345 45% 15% !important;
+  --popover-foreground: 210 40% 98% !important;
+  --primary: 346 84% 61% !important;
+  --primary-foreground: 210 40% 98% !important;
+  --secondary: 345 35% 19% !important;
+  --secondary-foreground: 210 40% 92% !important;
+  --muted: 345 35% 18% !important;
+  --muted-foreground: 345 20% 68% !important;
+  --accent: 346 84% 61% !important;
+  --border: 345 35% 25% !important;
+  --input: 345 35% 25% !important;
+  --ring: 346 84% 61% !important;
+  --sidebar-background: 348 60% 5% !important;
+  --sidebar-foreground: 210 40% 90% !important;
+  --sidebar-primary: 346 84% 61% !important;
+  --sidebar-accent: 345 35% 16% !important;
+  --sidebar-border: 345 35% 19% !important;
+}
+
+/* 6. Coral (Dark) */
+html.bps-theme-active.bps-dark-mode[data-bps-theme="coral"] {
+  --background: 20 30% 9% !important;
+  --foreground: 210 40% 98% !important;
+  --card: 20 28% 14% !important;
+  --card-foreground: 210 40% 98% !important;
+  --popover: 20 28% 16% !important;
+  --popover-foreground: 210 40% 98% !important;
+  --primary: 24 95% 53% !important;
+  --primary-foreground: 210 40% 98% !important;
+  --secondary: 20 25% 20% !important;
+  --secondary-foreground: 210 40% 92% !important;
+  --muted: 20 25% 19% !important;
+  --muted-foreground: 20 20% 68% !important;
+  --accent: 199 89% 55% !important;
+  --border: 20 25% 24% !important;
+  --input: 20 25% 24% !important;
+  --ring: 24 95% 53% !important;
+  --sidebar-background: 20 40% 6% !important;
+  --sidebar-foreground: 210 40% 90% !important;
+  --sidebar-primary: 24 95% 53% !important;
+  --sidebar-accent: 20 25% 17% !important;
+  --sidebar-border: 20 25% 20% !important;
+}
+
+/* 7. Express (Dark) */
+html.bps-theme-active.bps-dark-mode[data-bps-theme="express"] {
+  --background: 280 50% 7% !important;
+  --foreground: 210 40% 98% !important;
+  --card: 280 40% 12% !important;
+  --card-foreground: 210 40% 98% !important;
+  --popover: 280 40% 14% !important;
+  --popover-foreground: 210 40% 98% !important;
+  --primary: 290 90% 65% !important;
+  --primary-foreground: 210 40% 98% !important;
+  --secondary: 280 30% 18% !important;
+  --secondary-foreground: 210 40% 92% !important;
+  --muted: 280 30% 17% !important;
+  --muted-foreground: 280 20% 65% !important;
+  --accent: 290 90% 65% !important;
+  --border: 280 30% 23% !important;
+  --input: 280 30% 23% !important;
+  --ring: 290 90% 65% !important;
+  --sidebar-background: 282 60% 5% !important;
+  --sidebar-foreground: 210 40% 90% !important;
+  --sidebar-primary: 290 90% 65% !important;
+  --sidebar-accent: 280 30% 15% !important;
+  --sidebar-border: 280 30% 18% !important;
+}
+
+/* 8. Hyper (Dark) */
+html.bps-theme-active.bps-dark-mode[data-bps-theme="hyper"] {
+  --background: 245 45% 9% !important;
+  --foreground: 210 40% 98% !important;
+  --card: 245 40% 14% !important;
+  --card-foreground: 210 40% 98% !important;
+  --popover: 245 40% 16% !important;
+  --popover-foreground: 210 40% 98% !important;
+  --primary: 270 95% 65% !important;
+  --primary-foreground: 210 40% 98% !important;
+  --secondary: 245 35% 20% !important;
+  --secondary-foreground: 210 40% 92% !important;
+  --muted: 245 35% 19% !important;
+  --muted-foreground: 245 20% 65% !important;
+  --accent: 330 90% 60% !important;
+  --border: 245 35% 25% !important;
+  --input: 245 35% 25% !important;
+  --ring: 270 95% 65% !important;
+  --sidebar-background: 248 55% 6% !important;
+  --sidebar-foreground: 210 40% 90% !important;
+  --sidebar-primary: 270 95% 65% !important;
+  --sidebar-accent: 245 35% 17% !important;
+  --sidebar-border: 245 35% 20% !important;
+}
+
+/* 9. May (Dark) */
+html.bps-theme-active.bps-dark-mode[data-bps-theme="may"] {
+  --background: 320 40% 9% !important;
+  --foreground: 210 40% 98% !important;
+  --card: 320 35% 14% !important;
+  --card-foreground: 210 40% 98% !important;
+  --popover: 320 35% 16% !important;
+  --popover-foreground: 210 40% 98% !important;
+  --primary: 325 85% 65% !important;
+  --primary-foreground: 210 40% 98% !important;
+  --secondary: 320 30% 20% !important;
+  --secondary-foreground: 210 40% 92% !important;
+  --muted: 320 30% 19% !important;
+  --muted-foreground: 320 20% 68% !important;
+  --accent: 325 85% 65% !important;
+  --border: 320 30% 24% !important;
+  --input: 320 30% 24% !important;
+  --ring: 325 85% 65% !important;
+  --sidebar-background: 322 50% 6% !important;
+  --sidebar-foreground: 210 40% 90% !important;
+  --sidebar-primary: 325 85% 65% !important;
+  --sidebar-accent: 320 30% 17% !important;
+  --sidebar-border: 320 30% 20% !important;
+}
+
+/* 10. Pastel (Dark) */
+html.bps-theme-active.bps-dark-mode[data-bps-theme="pastel"] {
+  --background: 240 25% 10% !important;
+  --foreground: 210 40% 98% !important;
+  --card: 240 22% 15% !important;
+  --card-foreground: 210 40% 98% !important;
+  --popover: 240 22% 17% !important;
+  --popover-foreground: 210 40% 98% !important;
+  --primary: 250 80% 70% !important;
+  --primary-foreground: 210 40% 98% !important;
+  --secondary: 240 20% 21% !important;
+  --secondary-foreground: 210 40% 92% !important;
+  --muted: 240 20% 19% !important;
+  --muted-foreground: 240 15% 65% !important;
+  --accent: 340 70% 75% !important;
+  --border: 240 20% 25% !important;
+  --input: 240 20% 25% !important;
+  --ring: 250 80% 70% !important;
+  --sidebar-background: 240 30% 7% !important;
+  --sidebar-foreground: 210 40% 90% !important;
+  --sidebar-primary: 250 80% 70% !important;
+  --sidebar-accent: 240 20% 18% !important;
+  --sidebar-border: 240 20% 21% !important;
+}
+
+/* 11. Midnight OLED (Dark) */
+html.bps-theme-active.bps-dark-mode[data-bps-theme="midnight-oled"] {
+  --background: 0 0% 2% !important;
+  --foreground: 0 0% 98% !important;
+  --card: 0 0% 7% !important;
+  --card-foreground: 0 0% 98% !important;
+  --popover: 0 0% 9% !important;
+  --popover-foreground: 0 0% 98% !important;
+  --primary: 188 95% 50% !important;
+  --primary-foreground: 0 0% 98% !important;
+  --secondary: 0 0% 12% !important;
+  --secondary-foreground: 0 0% 92% !important;
+  --muted: 0 0% 11% !important;
+  --muted-foreground: 0 0% 65% !important;
+  --accent: 188 95% 50% !important;
+  --border: 0 0% 16% !important;
+  --input: 0 0% 16% !important;
+  --ring: 188 95% 50% !important;
+  --sidebar-background: 0 0% 0% !important;
+  --sidebar-foreground: 0 0% 90% !important;
+  --sidebar-primary: 188 95% 50% !important;
+  --sidebar-accent: 0 0% 10% !important;
+  --sidebar-border: 0 0% 14% !important;
+}
+
+/* 12. Tokyo Night (Dark) */
+html.bps-theme-active.bps-dark-mode[data-bps-theme="tokyo-night"] {
+  --background: 235 24% 11% !important;
+  --foreground: 210 40% 98% !important;
+  --card: 235 21% 15% !important;
+  --card-foreground: 210 40% 98% !important;
+  --popover: 235 21% 17% !important;
+  --popover-foreground: 210 40% 98% !important;
+  --primary: 221 87% 65% !important;
+  --primary-foreground: 210 40% 98% !important;
+  --secondary: 235 18% 20% !important;
+  --secondary-foreground: 210 40% 92% !important;
+  --muted: 235 18% 19% !important;
+  --muted-foreground: 235 15% 65% !important;
+  --accent: 178 80% 55% !important;
+  --border: 235 18% 24% !important;
+  --input: 235 18% 24% !important;
+  --ring: 221 87% 65% !important;
+  --sidebar-background: 235 30% 7% !important;
+  --sidebar-foreground: 210 40% 90% !important;
+  --sidebar-primary: 221 87% 65% !important;
+  --sidebar-accent: 235 18% 18% !important;
+  --sidebar-border: 235 18% 20% !important;
+}
+
+/* 13. Emerald Matrix (Dark) */
+html.bps-theme-active.bps-dark-mode[data-bps-theme="emerald-matrix"] {
+  --background: 160 50% 7% !important;
+  --foreground: 210 40% 98% !important;
+  --card: 160 40% 11% !important;
+  --card-foreground: 210 40% 98% !important;
+  --popover: 160 40% 13% !important;
+  --popover-foreground: 210 40% 98% !important;
+  --primary: 158 75% 48% !important;
+  --primary-foreground: 210 40% 98% !important;
+  --secondary: 160 30% 17% !important;
+  --secondary-foreground: 210 40% 92% !important;
+  --muted: 160 30% 16% !important;
+  --muted-foreground: 160 20% 65% !important;
+  --accent: 158 75% 48% !important;
+  --border: 160 30% 22% !important;
+  --input: 160 30% 22% !important;
+  --ring: 158 75% 48% !important;
+  --sidebar-background: 160 60% 4% !important;
+  --sidebar-foreground: 210 40% 90% !important;
+  --sidebar-primary: 158 75% 48% !important;
+  --sidebar-accent: 160 30% 15% !important;
+  --sidebar-border: 160 30% 18% !important;
+}
+
+/* 14. Dracula (Dark) */
+html.bps-theme-active.bps-dark-mode[data-bps-theme="dracula"] {
+  --background: 231 15% 14% !important;
+  --foreground: 60 30% 96% !important;
+  --card: 231 15% 18% !important;
+  --card-foreground: 60 30% 96% !important;
+  --popover: 231 15% 20% !important;
+  --popover-foreground: 60 30% 96% !important;
+  --primary: 265 89% 78% !important;
+  --primary-foreground: 231 15% 18% !important;
+  --secondary: 231 15% 24% !important;
+  --secondary-foreground: 60 30% 90% !important;
+  --muted: 231 15% 23% !important;
+  --muted-foreground: 231 10% 65% !important;
+  --accent: 326 100% 74% !important;
+  --border: 231 15% 28% !important;
+  --input: 231 15% 28% !important;
+  --ring: 265 89% 78% !important;
+  --sidebar-background: 231 20% 10% !important;
+  --sidebar-foreground: 60 30% 90% !important;
+  --sidebar-primary: 265 89% 78% !important;
+  --sidebar-accent: 231 15% 21% !important;
+  --sidebar-border: 231 15% 25% !important;
+}
+
+/* 15. Amber Gold (Dark) */
+html.bps-theme-active.bps-dark-mode[data-bps-theme="amber-gold"] {
+  --background: 35 45% 8% !important;
+  --foreground: 38 90% 95% !important;
+  --card: 35 38% 13% !important;
+  --card-foreground: 38 90% 95% !important;
+  --popover: 35 38% 15% !important;
+  --popover-foreground: 38 90% 95% !important;
+  --primary: 38 92% 50% !important;
+  --primary-foreground: 0 0% 100% !important;
+  --secondary: 35 30% 19% !important;
+  --secondary-foreground: 38 90% 90% !important;
+  --muted: 35 30% 18% !important;
+  --muted-foreground: 35 20% 65% !important;
+  --accent: 38 92% 50% !important;
+  --border: 35 30% 24% !important;
+  --input: 35 30% 24% !important;
+  --ring: 38 92% 50% !important;
+  --sidebar-background: 35 55% 5% !important;
+  --sidebar-foreground: 38 90% 90% !important;
+  --sidebar-primary: 38 92% 50% !important;
+  --sidebar-accent: 35 30% 17% !important;
+  --sidebar-border: 35 30% 20% !important;
+}
+
+/* 16. Nord Frost (Dark) */
+html.bps-theme-active.bps-dark-mode[data-bps-theme="nord-frost"] {
+  --background: 220 16% 16% !important;
+  --foreground: 218 27% 92% !important;
+  --card: 220 16% 22% !important;
+  --card-foreground: 218 27% 92% !important;
+  --popover: 220 16% 24% !important;
+  --popover-foreground: 218 27% 92% !important;
+  --primary: 193 43% 67% !important;
+  --primary-foreground: 220 16% 16% !important;
+  --secondary: 220 14% 28% !important;
+  --secondary-foreground: 218 27% 90% !important;
+  --muted: 220 14% 27% !important;
+  --muted-foreground: 218 10% 65% !important;
+  --accent: 213 32% 52% !important;
+  --border: 220 14% 34% !important;
+  --input: 220 14% 34% !important;
+  --ring: 193 43% 67% !important;
+  --sidebar-background: 220 20% 12% !important;
+  --sidebar-foreground: 218 27% 90% !important;
+  --sidebar-primary: 193 43% 67% !important;
+  --sidebar-accent: 220 14% 25% !important;
+  --sidebar-border: 220 14% 29% !important;
+}
+
+/* 17. Neon Cyberpunk (Dark) */
+html.bps-theme-active.bps-dark-mode[data-bps-theme="cyberpunk"] {
+  --background: 275 60% 6% !important;
+  --foreground: 0 0% 98% !important;
+  --card: 275 50% 11% !important;
+  --card-foreground: 0 0% 98% !important;
+  --popover: 275 50% 13% !important;
+  --popover-foreground: 0 0% 98% !important;
+  --primary: 330 100% 55% !important;
+  --primary-foreground: 0 0% 100% !important;
+  --secondary: 275 40% 18% !important;
+  --secondary-foreground: 0 0% 92% !important;
+  --muted: 275 40% 17% !important;
+  --muted-foreground: 275 20% 65% !important;
+  --accent: 185 100% 50% !important;
+  --border: 275 40% 25% !important;
+  --input: 275 40% 25% !important;
+  --ring: 330 100% 55% !important;
+  --sidebar-background: 275 70% 4% !important;
+  --sidebar-foreground: 0 0% 90% !important;
+  --sidebar-primary: 330 100% 55% !important;
+  --sidebar-accent: 275 40% 16% !important;
+  --sidebar-border: 275 40% 20% !important;
+}
+
+/* 18. Forest Moss (Dark) */
+html.bps-theme-active.bps-dark-mode[data-bps-theme="forest-moss"] {
+  --background: 140 40% 7% !important;
+  --foreground: 140 20% 95% !important;
+  --card: 140 35% 12% !important;
+  --card-foreground: 140 20% 95% !important;
+  --popover: 140 35% 14% !important;
+  --popover-foreground: 140 20% 95% !important;
+  --primary: 84 81% 44% !important;
+  --primary-foreground: 0 0% 100% !important;
+  --secondary: 140 28% 18% !important;
+  --secondary-foreground: 140 20% 90% !important;
+  --muted: 140 28% 17% !important;
+  --muted-foreground: 140 15% 65% !important;
+  --accent: 84 81% 44% !important;
+  --border: 140 28% 22% !important;
+  --input: 140 28% 22% !important;
+  --ring: 84 81% 44% !important;
+  --sidebar-background: 140 50% 4% !important;
+  --sidebar-foreground: 140 20% 90% !important;
+  --sidebar-primary: 84 81% 44% !important;
+  --sidebar-accent: 140 28% 16% !important;
+  --sidebar-border: 140 28% 19% !important;
+}
+
+/* 19. Ocean Abyss (Dark) */
+html.bps-theme-active.bps-dark-mode[data-bps-theme="ocean-abyss"] {
+  --background: 210 60% 6% !important;
+  --foreground: 210 40% 98% !important;
+  --card: 210 50% 11% !important;
+  --card-foreground: 210 40% 98% !important;
+  --popover: 210 50% 13% !important;
+  --popover-foreground: 210 40% 98% !important;
+  --primary: 199 89% 48% !important;
+  --primary-foreground: 0 0% 100% !important;
+  --secondary: 210 40% 17% !important;
+  --secondary-foreground: 210 40% 92% !important;
+  --muted: 210 40% 16% !important;
+  --muted-foreground: 210 20% 65% !important;
+  --accent: 173 80% 45% !important;
+  --border: 210 40% 22% !important;
+  --input: 210 40% 22% !important;
+  --ring: 199 89% 48% !important;
+  --sidebar-background: 210 70% 4% !important;
+  --sidebar-foreground: 210 40% 90% !important;
+  --sidebar-primary: 199 89% 48% !important;
+  --sidebar-accent: 210 40% 15% !important;
+  --sidebar-border: 210 40% 18% !important;
+}
+
+/* 20. Sunset Vibes (Dark) */
+html.bps-theme-active.bps-dark-mode[data-bps-theme="sunset-vibes"] {
+  --background: 260 45% 7% !important;
+  --foreground: 20 40% 98% !important;
+  --card: 260 40% 12% !important;
+  --card-foreground: 20 40% 98% !important;
+  --popover: 260 40% 14% !important;
+  --popover-foreground: 20 40% 98% !important;
+  --primary: 15 90% 55% !important;
+  --primary-foreground: 0 0% 100% !important;
+  --secondary: 260 30% 18% !important;
+  --secondary-foreground: 20 40% 92% !important;
+  --muted: 260 30% 17% !important;
+  --muted-foreground: 260 15% 65% !important;
+  --accent: 280 80% 60% !important;
+  --border: 260 30% 23% !important;
+  --input: 260 30% 23% !important;
+  --ring: 15 90% 55% !important;
+  --sidebar-background: 260 55% 5% !important;
+  --sidebar-foreground: 20 40% 90% !important;
+  --sidebar-primary: 15 90% 55% !important;
+  --sidebar-accent: 260 30% 16% !important;
+  --sidebar-border: 260 30% 19% !important;
+}
+
+/* --------------------------------------------------------------------------
+   2. VILÁGOS MÓD (LIGHT MODE) - 20 Színes Téma (Tiszta, elegáns felületek)
+   -------------------------------------------------------------------------- */
+html.bps-theme-active.bps-light-mode {
+  --card: 0 0% 100% !important;
+  --card-foreground: 222 47% 11% !important;
+  --popover: 0 0% 100% !important;
+  --popover-foreground: 222 47% 11% !important;
+  --foreground: 222 47% 11% !important;
+  --border: 214 32% 91% !important;
+  --input: 214 32% 91% !important;
+  --secondary: 210 40% 96% !important;
+  --secondary-foreground: 222 47% 15% !important;
+  --muted: 210 40% 96% !important;
+  --muted-foreground: 215 16% 47% !important;
+  --sidebar-background: 0 0% 100% !important;
+  --sidebar-foreground: 222 47% 25% !important;
+  --sidebar-border: 214 32% 91% !important;
+  --sidebar-accent: 210 40% 95% !important;
+  --sidebar-accent-foreground: 222 47% 11% !important;
+  color-scheme: light !important;
+}
+
+/* Light Mode Címsorok és Szövegek */
+html.bps-theme-active.bps-light-mode h1,
+html.bps-theme-active.bps-light-mode h2,
+html.bps-theme-active.bps-light-mode h3,
+html.bps-theme-active.bps-light-mode h4,
+html.bps-theme-active.bps-light-mode h5,
+html.bps-theme-active.bps-light-mode h6 {
+  color: #0f172a !important;
+}
+
+html.bps-theme-active.bps-light-mode p,
+html.bps-theme-active.bps-light-mode span:not([class*="badge"]):not([class*="bg-"]):not([class*="text-"]) {
+  color: #334155 !important;
+}
+
+/* 20 Light Mode Téma Paletta */
+html.bps-theme-active.bps-light-mode,
+html.bps-theme-active.bps-light-mode[data-bps-theme="digital-horizon"] {
+  --background: 210 50% 98% !important;
+  --primary: 199 89% 48% !important;
+  --ring: 199 89% 48% !important;
+  --accent: 330 85% 55% !important;
+  --sidebar-primary: 199 89% 48% !important;
+}
+html.bps-theme-active.bps-light-mode[data-bps-theme="blossom"] {
+  --background: 195 60% 98% !important;
+  --primary: 190 90% 42% !important;
+  --ring: 190 90% 42% !important;
+  --sidebar-primary: 190 90% 42% !important;
+}
+html.bps-theme-active.bps-light-mode[data-bps-theme="bubblegum"] {
+  --background: 300 50% 98% !important;
+  --primary: 292 84% 55% !important;
+  --ring: 292 84% 55% !important;
+  --sidebar-primary: 292 84% 55% !important;
+}
+html.bps-theme-active.bps-light-mode[data-bps-theme="cherry"] {
+  --background: 350 60% 98% !important;
+  --primary: 346 84% 50% !important;
+  --ring: 346 84% 50% !important;
+  --sidebar-primary: 346 84% 50% !important;
+}
+html.bps-theme-active.bps-light-mode[data-bps-theme="coral"] {
+  --background: 25 60% 98% !important;
+  --primary: 24 95% 50% !important;
+  --ring: 24 95% 50% !important;
+  --sidebar-primary: 24 95% 50% !important;
+}
+html.bps-theme-active.bps-light-mode[data-bps-theme="express"] {
+  --background: 275 40% 98% !important;
+  --primary: 280 80% 50% !important;
+  --ring: 280 80% 50% !important;
+  --sidebar-primary: 280 80% 50% !important;
+}
+html.bps-theme-active.bps-light-mode[data-bps-theme="hyper"] {
+  --background: 250 50% 98% !important;
+  --primary: 270 95% 55% !important;
+  --ring: 270 95% 55% !important;
+  --sidebar-primary: 270 95% 55% !important;
+}
+html.bps-theme-active.bps-light-mode[data-bps-theme="may"] {
+  --background: 330 50% 98% !important;
+  --primary: 325 85% 55% !important;
+  --ring: 325 85% 55% !important;
+  --sidebar-primary: 325 85% 55% !important;
+}
+html.bps-theme-active.bps-light-mode[data-bps-theme="pastel"] {
+  --background: 230 40% 98% !important;
+  --primary: 250 80% 60% !important;
+  --ring: 250 80% 60% !important;
+  --sidebar-primary: 250 80% 60% !important;
+}
+html.bps-theme-active.bps-light-mode[data-bps-theme="slate-indigo"] {
+  --background: 210 40% 98% !important;
+  --primary: 239 84% 60% !important;
+  --ring: 239 84% 60% !important;
+  --sidebar-primary: 239 84% 60% !important;
+}
+html.bps-theme-active.bps-light-mode[data-bps-theme="midnight-oled"] {
+  --background: 0 0% 98% !important;
+  --primary: 0 0% 9% !important;
+  --ring: 0 0% 9% !important;
+  --sidebar-primary: 0 0% 9% !important;
+}
+html.bps-theme-active.bps-light-mode[data-bps-theme="tokyo-night"] {
+  --background: 220 50% 98% !important;
+  --primary: 221 87% 55% !important;
+  --ring: 221 87% 55% !important;
+  --sidebar-primary: 221 87% 55% !important;
+}
+html.bps-theme-active.bps-light-mode[data-bps-theme="emerald-matrix"] {
+  --background: 150 50% 98% !important;
+  --primary: 158 75% 40% !important;
+  --ring: 158 75% 40% !important;
+  --sidebar-primary: 158 75% 40% !important;
+}
+html.bps-theme-active.bps-light-mode[data-bps-theme="dracula"] {
+  --background: 230 30% 98% !important;
+  --primary: 265 89% 65% !important;
+  --ring: 265 89% 65% !important;
+  --sidebar-primary: 265 89% 65% !important;
+}
+html.bps-theme-active.bps-light-mode[data-bps-theme="amber-gold"] {
+  --background: 42 55% 96% !important;
+  --foreground: 30 35% 18% !important;
+  --card: 45 60% 99% !important;
+  --card-foreground: 30 35% 18% !important;
+  --popover: 45 60% 99% !important;
+  --popover-foreground: 30 35% 18% !important;
+  --primary: 38 92% 43% !important;
+  --primary-foreground: 0 0% 100% !important;
+  --secondary: 42 45% 90% !important;
+  --secondary-foreground: 30 35% 22% !important;
+  --muted: 42 40% 91% !important;
+  --muted-foreground: 30 18% 42% !important;
+  --accent: 45 95% 55% !important;
+  --border: 38 35% 82% !important;
+  --input: 38 35% 82% !important;
+  --ring: 38 92% 43% !important;
+  --sidebar-background: 42 45% 97% !important;
+  --sidebar-foreground: 30 35% 22% !important;
+  --sidebar-primary: 38 92% 43% !important;
+  --sidebar-accent: 42 45% 90% !important;
+  --sidebar-accent-foreground: 30 35% 22% !important;
+  --sidebar-border: 38 35% 84% !important;
+}
+html.bps-theme-active.bps-light-mode[data-bps-theme="nord-frost"] {
+  --background: 210 30% 97% !important;
+  --primary: 200 60% 45% !important;
+  --ring: 200 60% 45% !important;
+  --sidebar-primary: 200 60% 45% !important;
+}
+html.bps-theme-active.bps-light-mode[data-bps-theme="cyberpunk"] {
+  --background: 280 40% 98% !important;
+  --primary: 330 100% 50% !important;
+  --ring: 330 100% 50% !important;
+  --sidebar-primary: 330 100% 50% !important;
+}
+html.bps-theme-active.bps-light-mode[data-bps-theme="forest-moss"] {
+  --background: 120 40% 98% !important;
+  --primary: 84 81% 38% !important;
+  --ring: 84 81% 38% !important;
+  --sidebar-primary: 84 81% 38% !important;
+}
+html.bps-theme-active.bps-light-mode[data-bps-theme="ocean-abyss"] {
+  --background: 200 50% 98% !important;
+  --primary: 200 90% 40% !important;
+  --ring: 200 90% 40% !important;
+  --sidebar-primary: 200 90% 40% !important;
+}
+html.bps-theme-active.bps-light-mode[data-bps-theme="sunset-vibes"] {
+  --background: 20 50% 98% !important;
+  --primary: 15 90% 50% !important;
+  --ring: 15 90% 50% !important;
+  --sidebar-primary: 15 90% 50% !important;
+}
+
+/* --------------------------------------------------------------------------
+   3. Alapfelületek, Oldalváz & Globális Szövegek (Mindkét Módra)
+   -------------------------------------------------------------------------- */
+html.bps-theme-active,
+html.bps-theme-active body {
+  background-color: hsl(var(--background)) !important;
+  color: hsl(var(--foreground)) !important;
+}
+
+html.bps-theme-active #root,
+html.bps-theme-active main {
+  background-color: transparent !important;
+  color: hsl(var(--foreground)) !important;
+}
+
+/* --------------------------------------------------------------------------
+   4. Tailwind Háttér Osztályok Dinamikus Felülbírálása
+   -------------------------------------------------------------------------- */
+html.bps-theme-active .bg-white,
+html.bps-theme-active [class*="bg-white/"] {
+  background-color: hsl(var(--card)) !important;
+}
+
+html.bps-theme-active header.bg-white,
+html.bps-theme-active nav.bg-white,
+html.bps-theme-active .sticky.bg-white {
+  background-color: hsl(var(--card) / 0.88) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+}
+
+html.bps-theme-active .bg-slate-50,
+html.bps-theme-active .bg-gray-50,
+html.bps-theme-active .bg-zinc-50,
+html.bps-theme-active .bg-neutral-50 {
+  background-color: hsl(var(--background)) !important;
+}
+
+html.bps-theme-active .bg-slate-100,
+html.bps-theme-active .bg-gray-100,
+html.bps-theme-active .bg-zinc-100,
+html.bps-theme-active .bg-neutral-100 {
+  background-color: hsl(var(--secondary)) !important;
+}
+
+html.bps-theme-active .bg-slate-200,
+html.bps-theme-active .bg-gray-200 {
+  background-color: hsl(var(--muted)) !important;
+}
+
+/* --------------------------------------------------------------------------
+   5. Szegélyek és Elválasztók (Borders & Dividers)
+   -------------------------------------------------------------------------- */
+html.bps-theme-active .border,
+html.bps-theme-active .border-t,
+html.bps-theme-active .border-b,
+html.bps-theme-active .border-l,
+html.bps-theme-active .border-r,
+html.bps-theme-active .border-gray-100,
+html.bps-theme-active .border-gray-200,
+html.bps-theme-active .border-gray-300,
+html.bps-theme-active .border-slate-100,
+html.bps-theme-active .border-slate-200,
+html.bps-theme-active .border-slate-300,
+html.bps-theme-active .border-zinc-200,
+html.bps-theme-active .border-amber-200,
+html.bps-theme-active .border-amber-300 {
+  border-color: hsl(var(--border)) !important;
+}
+
+html.bps-theme-active .divide-y > :not([hidden]) ~ :not([hidden]),
+html.bps-theme-active .divide-gray-200 > :not([hidden]) ~ :not([hidden]),
+html.bps-theme-active .divide-slate-200 > :not([hidden]) ~ :not([hidden]) {
+  border-color: hsl(var(--border)) !important;
+}
+
+/* --------------------------------------------------------------------------
+   6. Form Elemek, Inputok, Textarea, Select
+   -------------------------------------------------------------------------- */
+html.bps-theme-active input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="button"]),
+html.bps-theme-active textarea,
+html.bps-theme-active select {
+  background-color: hsl(var(--card)) !important;
+  color: hsl(var(--foreground)) !important;
+  border-color: hsl(var(--border)) !important;
+}
+
+html.bps-theme-active input:focus,
+html.bps-theme-active textarea:focus,
+html.bps-theme-active select:focus {
+  border-color: hsl(var(--primary)) !important;
+  outline: none !important;
+  box-shadow: 0 0 0 2px hsl(var(--primary) / 0.3) !important;
+}
+
+/* --------------------------------------------------------------------------
+   7. Táblázatok
+   -------------------------------------------------------------------------- */
+html.bps-theme-active table {
+  border-color: hsl(var(--border)) !important;
+}
+html.bps-theme-active thead,
+html.bps-theme-active th {
+  background-color: hsl(var(--secondary)) !important;
+  color: hsl(var(--muted-foreground)) !important;
+  border-color: hsl(var(--border)) !important;
+}
+html.bps-theme-active tbody tr:hover {
+  background-color: hsl(var(--secondary)) !important;
+}
+html.bps-theme-active td {
+  border-color: hsl(var(--border)) !important;
+}
+
+/* --------------------------------------------------------------------------
+   8. Sötét Mód Speciális Szövegkontraszt
+   -------------------------------------------------------------------------- */
+html.bps-dark-mode .text-black,
+html.bps-dark-mode .text-gray-900,
+html.bps-dark-mode .text-slate-900,
+html.bps-dark-mode .text-zinc-900,
+html.bps-dark-mode .text-gray-800,
+html.bps-dark-mode .text-slate-800 {
+  color: #f8fafc !important;
+}
+html.bps-dark-mode .text-gray-700,
+html.bps-dark-mode .text-slate-700,
+html.bps-dark-mode .text-zinc-700 {
+  color: #e2e8f0 !important;
+}
+html.bps-dark-mode .text-gray-600,
+html.bps-dark-mode .text-slate-600,
+html.bps-dark-mode .text-zinc-600 {
+  color: #cbd5e1 !important;
+}
+html.bps-dark-mode .text-gray-500,
+html.bps-dark-mode .text-slate-500,
+html.bps-dark-mode .text-zinc-500 {
+  color: #94a3b8 !important;
+}
+
+/* --------------------------------------------------------------------------
+   9. Egyedi Görgetősáv
+   -------------------------------------------------------------------------- */
+html.bps-theme-active * {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(var(--border)) hsl(var(--background));
+}
+
+html.bps-theme-active ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+html.bps-theme-active ::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+html.bps-theme-active ::-webkit-scrollbar-thumb {
+  background-color: hsl(var(--border));
+  border-radius: 9999px;
+}
+html.bps-theme-active ::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(var(--primary));
+}
+
+/* --------------------------------------------------------------------------
+   10. Fejléc Beállítások Gomb (Top-Right Header Settings Button)
+   -------------------------------------------------------------------------- */
+#bps-header-settings-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  min-width: 38px;
+  min-height: 38px;
+  border-radius: 50%;
+  background: rgba(30, 41, 59, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #94a3b8;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-right: 6px;
+  padding: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+#bps-header-settings-btn:hover {
+  background: rgba(45, 60, 85, 0.85);
+  border-color: hsl(var(--primary));
+  color: #ffffff;
+  box-shadow: 0 0 14px hsl(var(--primary) / 0.4);
+}
+
+#bps-header-settings-btn:hover .bps-gear-svg {
+  transform: rotate(45deg);
+}
+
+#bps-header-settings-btn .bps-gear-svg {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html.bps-light-mode #bps-header-settings-btn {
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(0, 0, 0, 0.12);
+  color: #475569;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+html.bps-light-mode #bps-header-settings-btn:hover {
+  background: #ffffff;
+  border-color: hsl(var(--primary));
+  color: #0f172a;
+}
+
+/* --------------------------------------------------------------------------
+   11. Lebegő Gyorskapcsoló Gomb (In-Page Floating Switch)
+   -------------------------------------------------------------------------- */
+#bps-floating-theme-toggle {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  background: rgba(18, 28, 50, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 9999px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 0 15px hsl(var(--primary) / 0.25);
+  cursor: pointer;
+  user-select: none;
+  font-family: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #f8fafc;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#bps-floating-theme-toggle:hover {
+  transform: translateY(-2px) scale(1.02);
+  background: rgba(24, 38, 68, 0.95);
+  border-color: hsl(var(--primary));
+  box-shadow: 0 14px 28px -4px rgba(0, 0, 0, 0.6), 0 0 20px hsl(var(--primary) / 0.35);
+}
+
+#bps-floating-theme-toggle .bps-toggle-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: hsl(var(--primary));
+  color: #ffffff;
+  font-size: 12px;
+}
+
+#bps-floating-theme-toggle .bps-toggle-badge {
+  font-size: 10px;
+  opacity: 0.6;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+
+html.bps-light-mode #bps-floating-theme-toggle {
+  background: rgba(255, 255, 255, 0.92);
+  color: #0f172a;
+  border-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.15);
+}
+html.bps-light-mode #bps-floating-theme-toggle .bps-toggle-badge {
+  background: rgba(0, 0, 0, 0.08);
+}
+/* --------------------------------------------------------------------------
+   12. BPS Téma & Színpaletta Lenyíló Ablak (GUI a képernyőkép mintájára)
+   -------------------------------------------------------------------------- */
+#bps-settings-dropdown {
+  position: fixed;
+  z-index: 100000;
+  width: 620px;
+  max-width: calc(100vw - 32px);
+  max-height: 85vh;
+  background: rgba(14, 20, 36, 0.96);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 20px;
+  box-shadow: 0 25px 60px -10px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.08), 0 0 35px hsl(var(--primary) / 0.25);
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-family: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  color: #f8fafc;
+  transform-origin: top right;
+  animation: bpsSettingsOpen 0.34s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  overflow: hidden;
+}
+
+.bps-settings-layout {
+  display: grid;
+  grid-template-columns: 142px minmax(0, 1fr);
+  gap: 16px;
+  min-height: 390px;
+}
+
+.bps-settings-tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-right: 12px;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.bps-settings-tab {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  padding: 10px 11px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background: transparent;
+  color: #94a3b8;
+  font: inherit;
+  font-size: 12px;
+  text-align: left;
+  cursor: pointer;
+  transition: color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+}
+
+.bps-settings-tab[hidden] {
+  display: none !important;
+}
+
+.bps-settings-tab > span:first-child {
+  width: 20px;
+  color: hsl(var(--primary));
+  text-align: center;
+}
+
+.bps-settings-tab:hover {
+  color: #f8fafc;
+  background: rgba(255, 255, 255, 0.06);
+  transform: translateX(2px);
+}
+
+.bps-settings-tab.active {
+  color: #fff;
+  background: hsl(var(--primary) / 0.16);
+  border-color: hsl(var(--primary) / 0.3);
+  box-shadow: inset 3px 0 0 hsl(var(--primary));
+}
+
+.bps-settings-pages {
+  min-width: 0;
+}
+
+.bps-settings-page {
+  display: none;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.bps-settings-page.active {
+  display: flex;
+}
+
+.bps-settings-page-enter {
+  animation: bpsSettingsPageEnter 0.24s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes bpsSettingsPageEnter {
+  from {
+    opacity: 0;
+    transform: translateX(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.bps-settings-mode-card {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 14px;
+  border: 1px solid hsl(var(--primary) / 0.2);
+  border-radius: 12px;
+  background: linear-gradient(135deg, hsl(var(--primary) / 0.14), rgba(255, 255, 255, 0.03));
+}
+
+.bps-settings-mode-card strong {
+  color: #f8fafc;
+  font-size: 13px;
+}
+
+.bps-settings-mode-card span {
+  color: #94a3b8;
+  font-size: 11px;
+}
+
+.bps-debug-info {
+  white-space: pre-line;
+  padding: 10px 12px;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.22);
+  color: #94a3b8;
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 10px;
+  line-height: 1.65;
+}
+
+html.bps-performance-mode #bps-settings-dropdown,
+html.bps-performance-mode #bps-settings-dropdown *,
+html.bps-performance-mode .bps-settings-page-enter {
+  animation: none !important;
+  transition: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  box-shadow: none !important;
+}
+
+html.bps-performance-mode #bps-settings-dropdown {
+  background: hsl(var(--card)) !important;
+}
+
+@keyframes bpsSettingsOpen {
+  from {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.94);
+    filter: blur(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+.bps-settings-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bps-settings-section-title {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: hsl(var(--primary));
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.bps-settings-section-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 6px;
+  background: hsl(var(--primary) / 0.16);
+}
+
+.bps-settings-section-line {
+  flex: 1;
+  height: 1px;
+  background: hsl(var(--primary) / 0.22);
+}
+
+.bps-pranker-note {
+  margin: -4px 0 0;
+  color: #94a3b8;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.bps-pranker-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.bps-pranker-control {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  padding: 11px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.04);
+  cursor: text;
+}
+
+.bps-pranker-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.bps-pranker-icon-exclamation {
+  background: rgba(244, 63, 94, 0.16);
+  color: #fb7185;
+}
+
+.bps-pranker-icon-minus {
+  background: rgba(139, 92, 246, 0.16);
+  color: #a78bfa;
+}
+
+.bps-pranker-icon-plus {
+  background: rgba(34, 197, 94, 0.16);
+  color: #4ade80;
+}
+
+.bps-pranker-control .bps-setting-label {
+  min-width: 0;
+}
+
+.bps-pranker-control input {
+  grid-column: 1 / -1;
+  width: 100%;
+  padding: 7px 8px;
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.22);
+  color: #f8fafc;
+  font: inherit;
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+
+.bps-pranker-control input:focus {
+  outline: 2px solid hsl(var(--ring));
+  outline-offset: 1px;
+}
+
+.bps-pranker-reset-btn {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid rgba(248, 113, 113, 0.35);
+  border-radius: 8px;
+  background: rgba(127, 29, 29, 0.22);
+  color: #fecaca;
+  font: inherit;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.bps-pranker-reset-btn:hover {
+  background: rgba(185, 28, 28, 0.38);
+  border-color: rgba(248, 113, 113, 0.65);
+}
+
+.bps-visibility-settings {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+@media (max-width: 620px) {
+  .bps-pranker-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.bps-settings-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 9px 11px;
+  border: 1px solid hsl(var(--primary) / 0.2);
+  border-radius: 10px;
+  background: hsl(var(--primary) / 0.07);
+  color: #94a3b8;
+  font-size: 11px;
+}
+
+.bps-settings-summary strong {
+  color: #f8fafc;
+  font-size: 12px;
+}
+
+.bps-dropdown-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.bps-dropdown-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.bps-dropdown-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.bps-dropdown-title svg {
+  color: hsl(var(--primary));
+}
+
+.bps-dropdown-subtitle {
+  font-size: 11px;
+  color: #94a3b8;
+}
+
+.bps-dropdown-close {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 8px;
+  transition: all 0.15s ease;
+}
+
+.bps-dropdown-close:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.bps-top-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+}
+
+.bps-top-controls-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #f8fafc;
+}
+
+.bps-filter-section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.bps-filter-instruction {
+  font-size: 11px;
+  color: #94a3b8;
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+
+.bps-filter-pills-box {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 8px 10px;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.bps-filter-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.bps-filter-pill {
+  flex: 1;
+  height: 22px;
+  border-radius: 6px;
+  background-color: var(--pill-color);
+  border: 1.5px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  opacity: 0.85;
+}
+
+.bps-filter-pill:hover {
+  opacity: 1;
+  transform: scale(1.08);
+  box-shadow: 0 0 8px var(--pill-color);
+}
+
+.bps-filter-pill.active {
+  opacity: 1;
+  border-color: #ffffff;
+  box-shadow: 0 0 0 2px #0e1424, 0 0 0 4px var(--pill-color);
+  transform: scale(1.05);
+}
+
+.bps-theme-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  overflow-y: auto;
+  max-height: 360px;
+  padding: 4px 4px 8px 4px;
+}
+
+.bps-theme-grid::-webkit-scrollbar {
+  width: 6px;
+}
+.bps-theme-grid::-webkit-scrollbar-thumb {
+  background: #2b3b57;
+  border-radius: 9999px;
+}
+
+.bps-theme-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1.5px solid rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+  transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+}
+
+.bps-theme-card:hover {
+  transform: translateY(-2px) scale(1.02);
+  border-color: rgba(255, 255, 255, 0.28);
+  box-shadow: 0 8px 20px -4px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.bps-theme-card.active {
+  border-color: hsl(var(--primary));
+  box-shadow: 0 0 0 2px hsl(var(--primary)), 0 8px 24px -2px hsl(var(--primary) / 0.45);
+  background: hsl(var(--primary) / 0.1);
+}
+
+.bps-theme-card-preview {
+  width: 100%;
+  height: 52px;
+  border-radius: 10px;
+  background: var(--theme-gradient);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.25);
+  margin-bottom: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.bps-theme-card.active .bps-theme-card-preview::after {
+  content: "✔";
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 18px;
+  height: 18px;
+  background: hsl(var(--primary));
+  color: #fff;
+  border-radius: 50%;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.bps-theme-card-label {
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  padding: 4px 6px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #f1f5f9;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: 0.2px;
+}
+
+.bps-dropdown-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 9px;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 11px;
+  color: #94a3b8;
+}
+
+.bps-dropdown-footer kbd {
+  background: #18243c;
+  border: 1px solid #293a58;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 10px;
+  font-weight: 600;
+  color: #cbd5e1;
+}
+
+.bps-reset-colors-btn {
+  width: 100%;
+  border: 1px solid rgba(248, 113, 113, 0.35);
+  border-radius: 8px;
+  padding: 7px 10px;
+  background: rgba(127, 29, 29, 0.22);
+  color: #fecaca;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.bps-reset-colors-btn:hover {
+  background: rgba(185, 28, 28, 0.38);
+  border-color: rgba(248, 113, 113, 0.65);
+}
+
+.bps-switch {
+  position: relative;
+  display: inline-block;
+  width: 42px;
+  height: 22px;
+  cursor: pointer;
+}
+.bps-switch input { opacity: 0; width: 0; height: 0; }
+.bps-switch-slider {
+  position: absolute;
+  inset: 0;
+  background-color: #24334c;
+  border-radius: 22px;
+  transition: all 0.25s ease;
+}
+.bps-switch-slider::before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 3px;
+  bottom: 3px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+.bps-switch input:checked + .bps-switch-slider {
+  background: hsl(var(--primary));
+}
+.bps-switch input:checked + .bps-switch-slider::before {
+  transform: translateX(20px);
+}
+
+.bps-checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 12px;
+  color: #cbd5e1;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.bps-animation-style-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  padding: 2px 0;
+}
+
+.bps-animation-style-row select {
+  min-width: 92px;
+  padding: 5px 8px;
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  border-radius: 7px;
+  background: rgba(15, 23, 42, 0.7);
+  color: #e2e8f0;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.bps-animation-style-row select:hover {
+  border-color: hsl(var(--primary) / 0.7);
+}
+
+.bps-font-family-row select {
+  min-width: 128px;
+}
+
+.bps-font-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 7px;
+  width: 100%;
+  margin-top: 2px;
+}
+
+.bps-font-preview-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  min-width: 0;
+  padding: 8px 9px;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 8px;
+  background: rgba(15, 23, 42, 0.42);
+  color: #e2e8f0;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+}
+
+.bps-font-preview-card:hover {
+  border-color: hsl(var(--primary) / 0.7);
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-1px);
+}
+
+.bps-font-preview-card.active {
+  border-color: hsl(var(--primary));
+  background: hsl(var(--primary) / 0.13);
+  box-shadow: 0 0 0 1px hsl(var(--primary) / 0.35);
+}
+
+.bps-font-preview-sample {
+  width: 100%;
+  overflow: hidden;
+  color: #f8fafc;
+  font-size: 17px;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+.bps-font-preview-name {
+  color: #94a3b8;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+html.bps-light-mode .bps-font-preview-card {
+  background: rgba(0, 0, 0, 0.03);
+  border-color: rgba(15, 23, 42, 0.12);
+  color: #0f172a;
+}
+
+html.bps-light-mode .bps-font-preview-card.active {
+  background: hsl(var(--primary) / 0.12);
+  border-color: hsl(var(--primary));
+}
+
+html.bps-light-mode .bps-font-preview-sample {
+  color: #0f172a;
+}
+
+html.bps-light-mode .bps-font-preview-name {
+  color: #64748b;
+}
+
+@media (max-width: 620px) {
+  .bps-font-preview-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+html[data-bps-font="inter"] {
+  --bps-selected-font: "Inter", "Segoe UI", sans-serif;
+}
+
+html[data-bps-font="poppins"] {
+  --bps-selected-font: "Poppins", "Segoe UI", sans-serif;
+}
+
+html[data-bps-font="space"] {
+  --bps-selected-font: "Space Grotesk", "Segoe UI", sans-serif;
+}
+
+html[data-bps-font="arial"] {
+  --bps-selected-font: Arial, Helvetica, sans-serif;
+}
+
+html[data-bps-font="georgia"] {
+  --bps-selected-font: Georgia, "Times New Roman", serif;
+}
+
+html[data-bps-font="mono"] {
+  --bps-selected-font: "JetBrains Mono", Consolas, monospace;
+}
+
+/* Keep the extension's own settings panel in its original font. */
+html[data-bps-font] body > :not(#bps-settings-dropdown):not(#bps-floating-theme-toggle),
+html[data-bps-font] body > :not(#bps-settings-dropdown):not(#bps-floating-theme-toggle) * {
+  font-family: var(--bps-selected-font) !important;
+}
+
+.bps-setting-label {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.bps-setting-label strong {
+  color: #e2e8f0;
+  font-size: 12px;
+}
+
+.bps-setting-label small {
+  color: #64748b;
+  font-size: 10px;
+}
+.bps-checkbox-row input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  background: #0b1120;
+  border: 1px solid #334155;
+  cursor: pointer;
+  display: grid;
+  place-content: center;
+}
+.bps-checkbox-row input[type="checkbox"]::before {
+  content: "✔";
+  font-size: 10px;
+  color: #ffffff;
+  transform: scale(0);
+  transition: 0.15s transform ease-in-out;
+}
+.bps-checkbox-row input[type="checkbox"]:checked {
+  background: hsl(var(--primary));
+  border-color: hsl(var(--primary));
+}
+.bps-checkbox-row input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+/* Dropdown világos módban */
+html.bps-light-mode #bps-settings-dropdown {
+  background: rgba(255, 255, 255, 0.98);
+  border-color: rgba(0, 0, 0, 0.12);
+  color: #0f172a;
+  box-shadow: 0 25px 60px -10px rgba(0, 0, 0, 0.25);
+}
+html.bps-light-mode .bps-dropdown-title,
+html.bps-light-mode .bps-top-controls-label {
+  color: #0f172a;
+}
+html.bps-light-mode .bps-top-controls {
+  background: rgba(0, 0, 0, 0.04);
+  border-color: rgba(0, 0, 0, 0.08);
+}
+html.bps-light-mode .bps-settings-summary strong,
+html.bps-light-mode .bps-setting-label strong {
+  color: #0f172a;
+}
+html.bps-light-mode .bps-animation-style-row select {
+  background: #ffffff;
+  color: #0f172a;
+  border-color: rgba(15, 23, 42, 0.16);
+}
+html.bps-light-mode .bps-pranker-note {
+  color: #64748b;
+}
+html.bps-light-mode .bps-pranker-control {
+  background: rgba(15, 23, 42, 0.03);
+  border-color: rgba(15, 23, 42, 0.12);
+}
+html.bps-light-mode .bps-pranker-control input {
+  background: #ffffff;
+  color: #0f172a;
+  border-color: rgba(15, 23, 42, 0.16);
+}
+html.bps-light-mode .bps-pranker-reset-btn {
+  background: #fff1f2;
+  border-color: #fecdd3;
+  color: #be123c;
+}
+html.bps-light-mode .bps-pranker-reset-btn:hover {
+  background: #ffe4e6;
+  border-color: #fda4af;
+}
+html.bps-light-mode .bps-visibility-settings {
+  background: rgba(15, 23, 42, 0.03);
+  border-color: rgba(15, 23, 42, 0.12);
+}
+html.bps-light-mode .bps-settings-summary {
+  color: #64748b;
+}
+html.bps-light-mode .bps-settings-tabs {
+  border-color: rgba(0, 0, 0, 0.08);
+}
+html.bps-light-mode .bps-settings-tab {
+  color: #64748b;
+}
+html.bps-light-mode .bps-settings-tab:hover {
+  color: #0f172a;
+  background: rgba(0, 0, 0, 0.04);
+}
+html.bps-light-mode .bps-settings-tab.active,
+html.bps-light-mode .bps-settings-mode-card strong {
+  color: #0f172a;
+}
+
+html.bps-no-animations #bps-settings-dropdown,
+html.bps-no-animations #bps-settings-dropdown *,
+html.bps-no-animations .bps-settings-page-enter,
+html.bps-no-animations .bps-digi-class-clicked,
+html.bps-no-animations .bps-digi-class-clicked svg {
+  animation: none !important;
+  transition: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #bps-settings-dropdown,
+  .bps-settings-page-enter {
+    animation: none;
+  }
+}
+
+@media (max-width: 640px) {
+  #bps-settings-dropdown {
+    width: calc(100vw - 24px);
+    max-height: 90vh;
+  }
+
+  .bps-settings-layout {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .bps-settings-tabs {
+    flex-direction: row;
+    padding-right: 0;
+    padding-bottom: 6px;
+    border-right: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .bps-settings-tab {
+    justify-content: center;
+    padding: 8px 5px;
+    font-size: 10px;
+  }
+
+  .bps-settings-tab.active {
+    box-shadow: inset 0 -3px 0 hsl(var(--primary));
+  }
+
+  .bps-settings-tab:focus-visible {
+    outline: 2px solid hsl(var(--primary));
+    outline-offset: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #bps-settings-dropdown {
+    animation: none;
+  }
+}
+
+/* Egységes, csak hoverkor látható fény a gombok és navigációs linkek körül. */
+html button:not(:disabled),
+html a[href],
+html input[type="button"]:not(:disabled),
+html input[type="submit"]:not(:disabled),
+html [role="button"]:not([aria-disabled="true"]) {
+  transition: box-shadow 180ms ease, transform 180ms ease, border-color 180ms ease;
+}
+
+html button:not(:disabled):hover,
+html a[href]:hover,
+html input[type="button"]:not(:disabled):hover,
+html input[type="submit"]:not(:disabled):hover,
+html [role="button"]:not([aria-disabled="true"]):hover {
+  border-color: hsl(var(--primary, 170 85% 60%) / 0.72) !important;
+  box-shadow:
+    0 0 0 1px rgba(94, 234, 212, 0.38),
+    0 0 14px rgba(94, 234, 212, 0.34),
+    0 0 28px rgba(94, 234, 212, 0.16) !important;
+}
+
+/* A Base44 oldalsávja gyakran linkként vagy cursor-pointer elemként rendereli a gombokat. */
+html body aside a[href]:hover,
+html body aside button:not(:disabled):hover,
+html body aside [role="button"]:not([aria-disabled="true"]):hover,
+html body nav a[href]:hover,
+html body nav button:not(:disabled):hover,
+html body nav [role="button"]:not([aria-disabled="true"]):hover,
+html body [class*="cursor-pointer"]:hover {
+  border-color: rgba(94, 234, 212, 0.82) !important;
+  box-shadow:
+    0 0 0 2px rgba(94, 234, 212, 0.42),
+    0 0 16px rgba(94, 234, 212, 0.48),
+    0 0 34px rgba(94, 234, 212, 0.2) !important;
+}
+
+html body aside a[href]:hover,
+html body aside button:not(:disabled):hover,
+html body aside [role="button"]:not([aria-disabled="true"]):hover,
+html body nav a[href]:hover,
+html body nav button:not(:disabled):hover,
+html body nav [role="button"]:not([aria-disabled="true"]):hover,
+html body [class*="cursor-pointer"]:hover {
+  filter: drop-shadow(0 0 8px rgba(94, 234, 212, 0.32));
+}
+
+/* A bal oldalsáv ikonjai finoman reagálnak, amikor föléjük kerül az egér. */
+html body aside a[href] svg,
+html body aside button svg,
+html body aside [role="button"] svg,
+html body aside [class*="cursor-pointer"] svg,
+html body nav a[href] svg,
+html body nav button svg,
+html body nav [role="button"] svg,
+html body nav [class*="cursor-pointer"] svg,
+html body [class*="sidebar" i] a[href] svg,
+html body [class*="sidebar" i] button svg,
+html body [class*="sidebar" i] [role="button"] svg {
+  transform-origin: center;
+  transition: transform 180ms ease, filter 180ms ease, color 180ms ease;
+  will-change: transform;
+}
+
+html body aside a[href]:hover svg,
+html body aside button:not(:disabled):hover svg,
+html body aside [role="button"]:not([aria-disabled="true"]):hover svg,
+html body aside [class*="cursor-pointer"]:hover svg,
+html body nav a[href]:hover svg,
+html body nav button:not(:disabled):hover svg,
+html body nav [role="button"]:not([aria-disabled="true"]):hover svg,
+html body nav [class*="cursor-pointer"]:hover svg,
+html body [class*="sidebar" i] a[href]:hover svg,
+html body [class*="sidebar" i] button:not(:disabled):hover svg,
+html body [class*="sidebar" i] [role="button"]:not([aria-disabled="true"]):hover svg {
+  animation: bpsSidebarIconHover 1.15s ease-in-out infinite;
+  filter:
+    drop-shadow(0 0 4px rgba(94, 234, 212, 0.9))
+    drop-shadow(0 0 11px rgba(94, 234, 212, 0.5));
+}
+
+html body .bps-sidebar-item-clicked {
+  animation: bpsSidebarItemClick 900ms cubic-bezier(0.22, 1, 0.36, 1) both !important;
+  position: relative;
+  z-index: 1;
+}
+
+html body .bps-sidebar-item-clicked svg {
+  animation: bpsSidebarIconClick 900ms cubic-bezier(0.22, 1, 0.36, 1) both !important;
+  filter:
+    drop-shadow(0 0 5px rgba(94, 234, 212, 0.95))
+    drop-shadow(0 0 14px rgba(94, 234, 212, 0.6));
+}
+
+/* React/Base44 sometimes renders sidebar entries as plain divs.
+   These marker classes are added to the actual entry after it appears. */
+html:not(.bps-no-animations) .bps-sidebar-animated .bps-sidebar-icon-animated {
+  transform-origin: center;
+  transition: transform 180ms ease, filter 180ms ease;
+  will-change: transform;
+}
+
+html:not(.bps-no-animations) .bps-sidebar-animated:hover .bps-sidebar-icon-animated {
+  animation: bpsSidebarIconHover 1.15s ease-in-out infinite !important;
+  filter:
+    drop-shadow(0 0 4px rgba(94, 234, 212, 0.9))
+    drop-shadow(0 0 11px rgba(94, 234, 212, 0.5)) !important;
+}
+
+html:not(.bps-no-animations) .bps-sidebar-item-clicked {
+  animation: bpsSidebarItemClick 900ms cubic-bezier(0.22, 1, 0.36, 1) both !important;
+}
+
+html:not(.bps-no-animations) .bps-sidebar-item-clicked .bps-sidebar-icon-animated {
+  animation: bpsSidebarIconClick 900ms cubic-bezier(0.22, 1, 0.36, 1) both !important;
+  filter:
+    drop-shadow(0 0 5px rgba(94, 234, 212, 0.95))
+    drop-shadow(0 0 14px rgba(94, 234, 212, 0.6)) !important;
+}
+
+html body .bps-sidebar-item-clicked::after {
+  content: "";
+  position: absolute;
+  inset: 50% auto auto 22px;
+  width: 12px;
+  height: 12px;
+  border: 2px solid rgba(94, 234, 212, 0.85);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0.2);
+  animation: bpsSidebarRipple 900ms ease-out both;
+}
+
+@keyframes bpsSidebarItemClick {
+  0% {
+    transform: scale(1) translateX(0);
+  }
+  22% {
+    transform: scale(0.94) translateX(2px);
+  }
+  48% {
+    transform: scale(1.06) translateX(-2px);
+    box-shadow:
+      0 0 0 2px rgba(94, 234, 212, 0.55),
+      0 0 18px rgba(94, 234, 212, 0.55),
+      0 0 32px rgba(94, 234, 212, 0.28);
+  }
+  72% {
+    transform: scale(0.985) translateX(1px);
+    box-shadow:
+      0 0 0 1px rgba(94, 234, 212, 0.22),
+      0 0 10px rgba(94, 234, 212, 0.25);
+  }
+  100% {
+    transform: scale(1) translateX(0);
+    box-shadow: none;
+  }
+}
+
+@keyframes bpsSidebarIconClick {
+  0% {
+    transform: scale(1) rotate(0deg) translateY(0);
+  }
+  25% {
+    transform: scale(0.82) rotate(-16deg) translateY(2px);
+  }
+  52% {
+    transform: scale(1.3) rotate(18deg) translateY(-4px);
+  }
+  72% {
+    transform: scale(1.08) rotate(-7deg) translateY(1px);
+  }
+  100% {
+    transform: scale(1) rotate(0deg) translateY(0);
+  }
+}
+
+@keyframes bpsSidebarRipple {
+  0% {
+    opacity: 0.95;
+    transform: translate(-50%, -50%) scale(0.2);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(4.5);
+  }
+}
+
+html body aside a[href]:active svg,
+html body aside button:not(:disabled):active svg,
+html body aside [role="button"]:not([aria-disabled="true"]):active svg,
+html body nav a[href]:active svg,
+html body nav button:not(:disabled):active svg,
+html body nav [role="button"]:not([aria-disabled="true"]):active svg,
+html body [class*="sidebar" i] a[href]:active svg,
+html body [class*="sidebar" i] button:not(:disabled):active svg,
+html body [class*="sidebar" i] [role="button"]:not([aria-disabled="true"]):active svg {
+  transform: scale(0.86);
+}
+
+@keyframes bpsSidebarIconHover {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg) scale(1);
+  }
+  25% {
+    transform: translateY(-3px) rotate(-10deg) scale(1.18);
+  }
+  50% {
+    transform: translateY(1px) rotate(8deg) scale(1.08);
+  }
+  75% {
+    transform: translateY(-1px) rotate(-4deg) scale(1.14);
+  }
+}
+
+html.bps-no-animations button:not(:disabled),
+html.bps-no-animations a[href],
+html.bps-no-animations input[type="button"]:not(:disabled),
+html.bps-no-animations input[type="submit"]:not(:disabled),
+html.bps-no-animations [role="button"]:not([aria-disabled="true"]) {
+  transition: none !important;
+}
+
+html.bps-no-animations button:not(:disabled):hover,
+html.bps-no-animations a[href]:hover,
+html.bps-no-animations input[type="button"]:not(:disabled):hover,
+html.bps-no-animations input[type="submit"]:not(:disabled):hover,
+html.bps-no-animations [role="button"]:not([aria-disabled="true"]):hover {
+  box-shadow: inherit !important;
+}
+
+html.bps-no-animations body aside a[href]:hover,
+html.bps-no-animations body aside button:not(:disabled):hover,
+html.bps-no-animations body aside [role="button"]:not([aria-disabled="true"]):hover,
+html.bps-no-animations body nav a[href]:hover,
+html.bps-no-animations body nav button:not(:disabled):hover,
+html.bps-no-animations body nav [role="button"]:not([aria-disabled="true"]):hover,
+html.bps-no-animations body [class*="cursor-pointer"]:hover {
+  box-shadow: inherit !important;
+  filter: none !important;
+}
+
+html.bps-no-animations body aside a[href] svg,
+html.bps-no-animations body aside button svg,
+html.bps-no-animations body aside [role="button"] svg,
+html.bps-no-animations body aside [class*="cursor-pointer"] svg,
+html.bps-no-animations body nav a[href] svg,
+html.bps-no-animations body nav button svg,
+html.bps-no-animations body nav [role="button"] svg,
+html.bps-no-animations body nav [class*="cursor-pointer"] svg,
+html.bps-no-animations body [class*="sidebar" i] svg {
+  animation: none !important;
+  transition: none !important;
+  filter: none !important;
+}
+
+html.bps-no-animations body .bps-sidebar-item-clicked,
+html.bps-no-animations body .bps-sidebar-item-clicked svg,
+html.bps-no-animations body .bps-sidebar-item-clicked::after {
+  animation: none !important;
+  filter: none !important;
+}
+html.bps-light-mode .bps-filter-pills-box {
+  background: rgba(0, 0, 0, 0.05);
+}
+html.bps-light-mode .bps-theme-card {
+  background: rgba(0, 0, 0, 0.02);
+  border-color: rgba(0, 0, 0, 0.08);
+}
+html.bps-light-mode .bps-theme-card-label {
+  background: rgba(15, 23, 42, 0.85);
+}
+html.bps-light-mode .bps-dropdown-footer {
+  border-color: rgba(0, 0, 0, 0.08);
+}
+html.bps-light-mode .bps-reset-colors-btn {
+  background: #fff1f2;
+  border-color: #fecdd3;
+  color: #be123c;
+}
+html.bps-light-mode .bps-reset-colors-btn:hover {
+  background: #ffe4e6;
+  border-color: #fda4af;
+}
+html.bps-light-mode .bps-switch-slider {
+  background-color: #cbd5e1;
+}
+
+/* Keep Base44's original per-course colors on the Digi osztály page. */
+html.bps-theme-active .bps-native-digi-card,
+html.bps-theme-active .bps-native-digi-card * {
+  background-color: revert !important;
+  color: revert !important;
+  border-color: revert !important;
+  box-shadow: revert !important;
+}
+
+/* Digi osztály tab: a short, non-glowing click animation. */
+#bps-floating-theme-toggle {
+  display: none !important;
+}
+
+.bps-digi-class-clicked {
+  will-change: transform, box-shadow;
+  animation: bpsDigiClassPress 2s ease-in-out both !important;
+}
+
+.bps-digi-class-clicked svg {
+  will-change: transform;
+  animation: bpsDigiClassFloat 2s ease-in-out both !important;
+}
+
+@keyframes bpsDigiClassFloat {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-1px) rotate(-3deg);
+  }
+  75% {
+    transform: translateY(1px) rotate(3deg);
+  }
+}
+
+@keyframes bpsDigiClassPress {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 transparent;
+  }
+  18% {
+    transform: scale(0.97);
+    box-shadow: 0 0 0 0 transparent;
+  }
+  42% {
+    transform: scale(1.015);
+    box-shadow: 0 0 0 3px hsl(var(--primary) / 0.2);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 transparent;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bps-digi-class-clicked,
+  .bps-digi-class-clicked svg,
+  body aside svg,
+  body nav svg,
+  body [class*="sidebar" i] svg {
+    animation: none;
+    transition: none;
+    filter: none;
+  }
+}
+
+/* Választható oldalsáv-animációs stílusok. */
+html:not(.bps-no-animations).bps-animation-style-strong body aside a:hover svg,
+html:not(.bps-no-animations).bps-animation-style-strong body aside button:hover svg,
+html:not(.bps-no-animations).bps-animation-style-strong body aside [role="button"]:hover svg,
+html:not(.bps-no-animations).bps-animation-style-strong body aside [class*="cursor-pointer"]:hover svg,
+html:not(.bps-no-animations).bps-animation-style-strong body nav a:hover svg,
+html:not(.bps-no-animations).bps-animation-style-strong body nav button:hover svg,
+html:not(.bps-no-animations).bps-animation-style-strong body nav [role="button"]:hover svg,
+html:not(.bps-no-animations).bps-animation-style-strong body nav [class*="cursor-pointer"]:hover svg,
+html:not(.bps-no-animations).bps-animation-style-strong body [class*="sidebar" i]:hover svg {
+  animation: bpsSidebarStrongHover 760ms ease-in-out infinite !important;
+}
+
+html:not(.bps-no-animations).bps-animation-style-strong .bps-sidebar-animated:hover .bps-sidebar-icon-animated {
+  animation: bpsSidebarStrongHover 760ms ease-in-out infinite !important;
+}
+
+html:not(.bps-no-animations).bps-animation-style-strong body .bps-sidebar-item-clicked {
+  animation: bpsSidebarStrongClick 950ms cubic-bezier(0.2, 1.4, 0.4, 1) both !important;
+}
+
+html:not(.bps-no-animations).bps-animation-style-strong body .bps-sidebar-item-clicked svg {
+  animation: bpsSidebarStrongIconClick 950ms cubic-bezier(0.2, 1.4, 0.4, 1) both !important;
+}
+
+html:not(.bps-no-animations).bps-animation-style-strong .bps-sidebar-item-clicked {
+  animation: bpsSidebarStrongClick 950ms cubic-bezier(0.2, 1.4, 0.4, 1) both !important;
+}
+
+html:not(.bps-no-animations).bps-animation-style-strong .bps-sidebar-item-clicked .bps-sidebar-icon-animated {
+  animation: bpsSidebarStrongIconClick 950ms cubic-bezier(0.2, 1.4, 0.4, 1) both !important;
+}
+
+html:not(.bps-no-animations).bps-animation-style-neon body aside a:hover svg,
+html:not(.bps-no-animations).bps-animation-style-neon body aside button:hover svg,
+html:not(.bps-no-animations).bps-animation-style-neon body aside [role="button"]:hover svg,
+html:not(.bps-no-animations).bps-animation-style-neon body aside [class*="cursor-pointer"]:hover svg,
+html:not(.bps-no-animations).bps-animation-style-neon body nav a:hover svg,
+html:not(.bps-no-animations).bps-animation-style-neon body nav button:hover svg,
+html:not(.bps-no-animations).bps-animation-style-neon body nav [role="button"]:hover svg,
+html:not(.bps-no-animations).bps-animation-style-neon body nav [class*="cursor-pointer"]:hover svg,
+html:not(.bps-no-animations).bps-animation-style-neon body [class*="sidebar" i]:hover svg {
+  animation: bpsSidebarNeonHover 900ms ease-in-out infinite !important;
+}
+
+html:not(.bps-no-animations).bps-animation-style-neon .bps-sidebar-animated:hover .bps-sidebar-icon-animated {
+  animation: bpsSidebarNeonHover 900ms ease-in-out infinite !important;
+}
+
+html:not(.bps-no-animations).bps-animation-style-neon body .bps-sidebar-item-clicked {
+  animation: bpsSidebarNeonClick 1s ease-out both !important;
+}
+
+html:not(.bps-no-animations).bps-animation-style-neon body .bps-sidebar-item-clicked svg {
+  animation: bpsSidebarNeonIconClick 1s ease-out both !important;
+}
+
+html:not(.bps-no-animations).bps-animation-style-neon .bps-sidebar-item-clicked {
+  animation: bpsSidebarNeonClick 1s ease-out both !important;
+}
+
+html:not(.bps-no-animations).bps-animation-style-neon .bps-sidebar-item-clicked .bps-sidebar-icon-animated {
+  animation: bpsSidebarNeonIconClick 1s ease-out both !important;
+}
+
+html:not(.bps-no-animations).bps-animation-style-bounce body aside a:hover svg,
+html:not(.bps-no-animations).bps-animation-style-bounce body aside button:hover svg,
+html:not(.bps-no-animations).bps-animation-style-bounce body aside [role="button"]:hover svg,
+html:not(.bps-no-animations).bps-animation-style-bounce body aside [class*="cursor-pointer"]:hover svg,
+html:not(.bps-no-animations).bps-animation-style-bounce body nav a:hover svg,
+html:not(.bps-no-animations).bps-animation-style-bounce body nav button:hover svg,
+html:not(.bps-no-animations).bps-animation-style-bounce body nav [role="button"]:hover svg,
+html:not(.bps-no-animations).bps-animation-style-bounce body nav [class*="cursor-pointer"]:hover svg,
+html:not(.bps-no-animations).bps-animation-style-bounce body [class*="sidebar" i]:hover svg {
+  animation: bpsSidebarBounceHover 820ms cubic-bezier(0.34, 1.56, 0.64, 1) infinite !important;
+}
+
+html:not(.bps-no-animations).bps-animation-style-bounce .bps-sidebar-animated:hover .bps-sidebar-icon-animated {
+  animation: bpsSidebarBounceHover 820ms cubic-bezier(0.34, 1.56, 0.64, 1) infinite !important;
+}
+
+html:not(.bps-no-animations).bps-animation-style-bounce body .bps-sidebar-item-clicked {
+  animation: bpsSidebarBounceClick 900ms cubic-bezier(0.34, 1.56, 0.64, 1) both !important;
+}
+
+html:not(.bps-no-animations).bps-animation-style-bounce body .bps-sidebar-item-clicked svg {
+  animation: bpsSidebarBounceIconClick 900ms cubic-bezier(0.34, 1.56, 0.64, 1) both !important;
+}
+
+html:not(.bps-no-animations).bps-animation-style-bounce .bps-sidebar-item-clicked {
+  animation: bpsSidebarBounceClick 900ms cubic-bezier(0.34, 1.56, 0.64, 1) both !important;
+}
+
+html:not(.bps-no-animations).bps-animation-style-bounce .bps-sidebar-item-clicked .bps-sidebar-icon-animated {
+  animation: bpsSidebarBounceIconClick 900ms cubic-bezier(0.34, 1.56, 0.64, 1) both !important;
+}
+
+html:not(.bps-no-animations).bps-animation-style-minimal body aside a:hover svg,
+html:not(.bps-no-animations).bps-animation-style-minimal body aside button:hover svg,
+html:not(.bps-no-animations).bps-animation-style-minimal body aside [role="button"]:hover svg,
+html:not(.bps-no-animations).bps-animation-style-minimal body aside [class*="cursor-pointer"]:hover svg,
+html:not(.bps-no-animations).bps-animation-style-minimal body nav a:hover svg,
+html:not(.bps-no-animations).bps-animation-style-minimal body nav button:hover svg,
+html:not(.bps-no-animations).bps-animation-style-minimal body nav [role="button"]:hover svg,
+html:not(.bps-no-animations).bps-animation-style-minimal body nav [class*="cursor-pointer"]:hover svg,
+html:not(.bps-no-animations).bps-animation-style-minimal body [class*="sidebar" i]:hover svg {
+  animation: bpsSidebarMinimalHover 1.2s ease-in-out infinite !important;
+  filter: none !important;
+}
+
+html:not(.bps-no-animations).bps-animation-style-minimal .bps-sidebar-animated:hover .bps-sidebar-icon-animated {
+  animation: bpsSidebarMinimalHover 1.2s ease-in-out infinite !important;
+  filter: none !important;
+}
+
+html:not(.bps-no-animations).bps-animation-style-minimal body .bps-sidebar-item-clicked {
+  animation: bpsSidebarMinimalClick 500ms ease-out both !important;
+}
+
+html:not(.bps-no-animations).bps-animation-style-minimal body .bps-sidebar-item-clicked svg {
+  animation: bpsSidebarMinimalIconClick 500ms ease-out both !important;
+  filter: none !important;
+}
+
+html:not(.bps-no-animations).bps-animation-style-minimal .bps-sidebar-item-clicked {
+  animation: bpsSidebarMinimalClick 500ms ease-out both !important;
+}
+
+html:not(.bps-no-animations).bps-animation-style-minimal .bps-sidebar-item-clicked .bps-sidebar-icon-animated {
+  animation: bpsSidebarMinimalIconClick 500ms ease-out both !important;
+  filter: none !important;
+}
+
+@keyframes bpsSidebarStrongHover {
+  0%, 100% { transform: translateY(0) rotate(0) scale(1); }
+  25% { transform: translateY(-5px) rotate(-14deg) scale(1.24); }
+  50% { transform: translateY(2px) rotate(12deg) scale(1.12); }
+  75% { transform: translateY(-3px) rotate(-7deg) scale(1.2); }
+}
+
+@keyframes bpsSidebarStrongClick {
+  0% { transform: scale(1); }
+  25% { transform: scale(0.9) rotate(-2deg); }
+  55% { transform: scale(1.1) rotate(2deg); box-shadow: 0 0 0 3px rgba(94, 234, 212, 0.55), 0 0 28px rgba(94, 234, 212, 0.6); }
+  100% { transform: scale(1); box-shadow: none; }
+}
+
+@keyframes bpsSidebarStrongIconClick {
+  0% { transform: scale(1) rotate(0); }
+  35% { transform: scale(0.72) rotate(-22deg); }
+  62% { transform: scale(1.42) rotate(24deg); }
+  100% { transform: scale(1) rotate(0); }
+}
+
+@keyframes bpsSidebarNeonHover {
+  0%, 100% { transform: scale(1); filter: drop-shadow(0 0 3px rgba(94, 234, 212, 0.45)); }
+  50% { transform: scale(1.18); filter: drop-shadow(0 0 5px rgba(94, 234, 212, 1)) drop-shadow(0 0 15px rgba(94, 234, 212, 0.7)); }
+}
+
+@keyframes bpsSidebarNeonClick {
+  0% { transform: scale(1); box-shadow: none; }
+  40% { transform: scale(1.08); box-shadow: 0 0 0 3px rgba(94, 234, 212, 0.75), 0 0 30px rgba(94, 234, 212, 0.75); }
+  100% { transform: scale(1); box-shadow: none; }
+}
+
+@keyframes bpsSidebarNeonIconClick {
+  0%, 100% { transform: rotate(0) scale(1); }
+  50% { transform: rotate(360deg) scale(1.35); }
+}
+
+@keyframes bpsSidebarBounceHover {
+  0%, 100% { transform: translateY(0) scale(1); }
+  35% { transform: translateY(-8px) scale(1.25); }
+  55% { transform: translateY(2px) scale(0.96); }
+  75% { transform: translateY(-3px) scale(1.12); }
+}
+
+@keyframes bpsSidebarBounceClick {
+  0% { transform: scale(1); }
+  25% { transform: scale(0.88) translateY(2px); }
+  55% { transform: scale(1.12) translateY(-4px); }
+  80% { transform: scale(0.98) translateY(1px); }
+  100% { transform: scale(1); }
+}
+
+@keyframes bpsSidebarBounceIconClick {
+  0% { transform: translateY(0) scale(1); }
+  35% { transform: translateY(3px) scale(0.8) rotate(-12deg); }
+  62% { transform: translateY(-8px) scale(1.4) rotate(12deg); }
+  100% { transform: translateY(0) scale(1) rotate(0); }
+}
+
+@keyframes bpsSidebarMinimalHover {
+  0%, 100% { transform: translateX(0) scale(1); }
+  50% { transform: translateX(2px) scale(1.06); }
+}
+
+@keyframes bpsSidebarMinimalClick {
+  0% { transform: translateX(0) scale(1); }
+  28% { transform: translateX(4px) scale(1.02); }
+  58% { transform: translateX(-3px) scale(1.03); }
+  82% { transform: translateX(1px) scale(1.01); }
+  100% { transform: translateX(0) scale(1); }
+}
+
+@keyframes bpsSidebarMinimalIconClick {
+  0% { transform: translateX(0) rotate(0) scale(1); }
+  35% { transform: translateX(4px) rotate(-8deg) scale(1.12); }
+  68% { transform: translateX(-3px) rotate(8deg) scale(1.08); }
+  100% { transform: translateX(0) rotate(0) scale(1); }
+}
+
+/* Only the single navigation icon marked by content.js may animate on hover.
+   This prevents a hovered sidebar wrapper from animating every child icon. */
+html:not(.bps-no-animations) body aside svg:not(.bps-sidebar-icon-animated),
+html:not(.bps-no-animations) body nav svg:not(.bps-sidebar-icon-animated),
+html:not(.bps-no-animations) body [class*="sidebar" i] svg:not(.bps-sidebar-icon-animated),
+html:not(.bps-no-animations) body [class*="cursor-pointer"] svg:not(.bps-sidebar-icon-animated) {
+  animation: none !important;
+  filter: none !important;
+}

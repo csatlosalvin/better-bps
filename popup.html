@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BPS Gellért Sötét Mód</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <!-- Fejléc -->
+    <header class="header">
+      <div class="logo-box">
+        <img src="icons/icon.svg" alt="BPS Gellért Logo" class="logo-icon">
+        <div class="title-meta">
+          <h1>BPS Gellért</h1>
+          <span class="subtitle">Sötét Mód & Témagaléria</span>
+        </div>
+      </div>
+      <span class="version-badge">v1.2.5</span>
+    </header>
+
+    <!-- Fő bekapcsoló kártya -->
+    <section class="card main-toggle-card">
+      <div class="toggle-info">
+        <span class="card-title">Sötét Téma</span>
+        <span class="card-status" id="theme-status-text">Bekapcsolva</span>
+      </div>
+      <label class="switch" for="theme-toggle">
+        <input type="checkbox" id="theme-toggle" checked>
+        <span class="slider"></span>
+      </label>
+    </section>
+
+    <!-- Színszűrő (Képernyőkép mintájára) -->
+    <section class="filter-section">
+      <span class="filter-instruction">Kattints egy színre a szűréshez:</span>
+      <div class="filter-pills-box" id="filter-pills-container">
+        <!-- JS generálja a két sor gombot -->
+      </div>
+    </section>
+
+    <!-- Témák Rácsa (2 oszlopos a kompaktabb popup mérethez) -->
+    <section class="theme-grid-section">
+      <div class="theme-grid" id="theme-grid">
+        <!-- JS generálja a kártyákat -->
+      </div>
+    </section>
+
+    <!-- Opciók -->
+    <section class="card options-card">
+      <label class="checkbox-row" for="floating-btn-toggle">
+        <input type="checkbox" id="floating-btn-toggle" checked>
+        <span class="checkbox-text">Lebegő gyorsgomb a weboldalon</span>
+      </label>
+    </section>
+
+    <!-- Gyorsbillentyű & Aktív domain infó -->
+    <footer class="footer">
+      <div class="info-row">
+        <span>Gyorsváltó:</span>
+        <kbd class="shortcut-badge">Alt + Shift + D</kbd>
+      </div>
+      <div class="site-tag" id="domain-tag">
+        <span class="dot"></span>
+        <span>bps-gell-rt.base44.app</span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+    <linearGradient id="moonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background container -->
+  <rect width="128" height="128" rx="28" fill="url(#bgGrad)" />
+  <rect x="2" y="2" width="124" height="124" rx="26" fill="none" stroke="url(#accentGrad)" stroke-width="2.5" stroke-opacity="0.4" />
+
+  <!-- Moon Crescent with glow -->
+  <path d="M74 34C54.1 34 38 50.1 38 70C38 89.9 54.1 106 74 106C81.6 106 88.7 103.6 94.6 99.5C79.8 96.8 68.6 83.8 68.6 68.1C68.6 52.8 79.2 40 93.6 36.8C87.8 35 81.1 34 74 34Z"
+        fill="url(#moonGrad)" filter="url(#glow)" />
+
+  <!-- Sparkling stars -->
+  <path d="M42 36L44 41L49 43L44 45L42 50L40 45L35 43L40 41Z" fill="#38bdf8" />
+  <path d="M88 24L89.5 27.5L93 29L89.5 30.5L88 34L86.5 30.5L83 29L86.5 27.5Z" fill="#a5b4fc" />
+  <circle cx="98" cy="56" r="2.5" fill="#e0e7ff" />
+</svg>
